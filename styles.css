@@ -26,7 +26,7 @@ body {
   color: hsl(235, 18%, 26%);
 }
 
-main {
+.main-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -109,12 +109,20 @@ footer {
   font-family: "Robotoregular", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  border: none;
   box-shadow: none;
   outline: none;
   padding: 18px 70px;
   border-radius: 10px;
   margin: 20px 0;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-image: linear-gradient(135deg, #ff6a3a, #ff527b);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  background-color: hsl(234, 29%, 20%);
 }
 
 #email {
@@ -123,10 +131,84 @@ footer {
   border-radius: 10px;
   color: #d3d3d3;
   margin-top: 5px;
+  cursor: pointer;
+}
+
+.email-message {
+  display: flex;
+  justify-content: space-between;
 }
 
 .emaillabel {
   font-size: 11px;
   font-family: "Robotobold", sans-serif;
   font-weight: 700;
+}
+
+.error-message {
+  font-size: 11px;
+  font-family: "Robotobold", sans-serif;
+  font-weight: 700;
+  margin-left: auto;
+  padding-right: 17px;
+  color: hsl(4, 100%, 67%);
+}
+
+.box-success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  width: 460px;
+  height: 470px;
+  line-height: 1.5em;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-success h2 {
+  font-size: 50px;
+  font-family: "Robotobold", sans-serif;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 22px 0;
+}
+
+.box-success img {
+  width: 60px;
+}
+
+.inner-container {
+  padding: 60px; /* Adjust the padding as needed */
+  text-align: left;
+}
+
+.btn2 {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  font-family: "Robotoregular", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: none;
+  outline: none;
+  padding: 18px 70px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: none;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+  background-image: linear-gradient(135deg, #ff6a3a, #ff527b);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  background-color: hsl(234, 29%, 20%);
+}
+
+section.box-success.hidden {
+  display: none;
 }

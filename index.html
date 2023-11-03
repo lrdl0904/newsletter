@@ -16,60 +16,68 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header></header>
     <main>
-      <!-- Sign-up form start -->
-      <div class="boxes box1">
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>
-            <img src="assets/images/icon-list.svg" alt="check" />
-            <span>Productdiscovery and building what matters</span>
-          </li>
-          <li>
-            <img src="assets/images/icon-list.svg" alt="check" />
-            <span>Measuring to ensure updates are a success</span>
-          </li>
-          <li>
-            <img src="assets/images/icon-list.svg" alt="check" />
-            <span>And much more!</span>
-          </li>
-        </ul>
+      <section class="main-box">
+        <div class="boxes box1">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="check" />
+              <span>Productdiscovery and building what matters</span>
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="check" />
+              <span>Measuring to ensure updates are a success</span>
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="check" />
+              <span>And much more!</span>
+            </li>
+          </ul>
 
-        <label for="email" class="emaillabel">Email address</label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email@company.com"
-        />
+          <section class="email-message">
+            <label for="email" class="emaillabel">Email address</label>
+            <strong class="error-message hidden">Valid Email Required</strong>
+            <br />
+          </section>
 
-        <button type="button" class="btn">
-          Subscribe to monthly newsletter
-        </button>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@company.com"
+          />
 
-        <!-- Sign-up form end -->
-        <section class="hidden">
-          <!-- Success message start -->
-
-          Thanks for subscribing! A confirmation email has been sent to
-          ash@loremcompany.com. Please open it and click the button inside to
-          confirm your subscription. Dismiss message
-        </section>
-
-        <!-- Success message end -->
-      </div>
-      <div class="boxes box2">
-        <img
-          src="assets/images/illustration-sign-up-desktop.svg"
-          alt="illustration for sign-up deksktop"
-          width="100"
-          height="100"
-        />
-      </div>
+          <button type="button" class="btn">
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+        <div class="boxes box2">
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="illustration for sign-up deksktop"
+            width="100"
+            height="100"
+          />
+        </div>
+      </section>
+      <section class="box-success hidden">
+        <div class="inner-container">
+          <img src="assets/images/icon-list.svg" alt="check" />
+          <h2>Thanks for Subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <strong id="displayInput"></strong>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+          <button type="button" class="btn2">Dismiss message</button>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="attribution">
