@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Robotobold";
+  src: url("assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Robotoregular";
+  src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(235, 18%, 26%);
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  width: 845px;
+  height: 585px;
+  line-height: 1.5em;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Robotobold", sans-serif;
+  font-weight: 700;
+}
+
+main p {
+  font-size: 14px;
+  font-family: "Robotoregular", sans-serif;
+  font-weight: 400;
+}
+
+main ul {
+  font-family: "Robotoregular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+main ul li {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+
+main ul li img {
+  width: 20px;
+  padding-right: 12px;
+}
+
+.boxes {
+  flex: 1;
+  padding: 22px;
+}
+.box1 {
+  padding-left: 60px;
+}
+
+.box2 img {
+  height: 540px;
+  width: auto;
+}
+
+.box2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  font-family: "Robotoregular", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 18px 70px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+#email {
+  border: 0.5px solid;
+  padding: 18px 140px 18px 20px;
+  border-radius: 10px;
+  color: #d3d3d3;
+  margin-top: 5px;
+}
+
+.emaillabel {
+  font-size: 11px;
+  font-family: "Robotobold", sans-serif;
+  font-weight: 700;
+}
