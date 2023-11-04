@@ -8,6 +8,12 @@
   src: url("assets/fonts/Roboto-Regular.ttf");
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -24,6 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   color: hsl(235, 18%, 26%);
+  overflow-x: hidden;
 }
 
 .main-box {
@@ -211,4 +218,63 @@ footer {
 
 section.box-success.hidden {
   display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* mobile shit */
+
+@media (max-width: 750px) {
+  .box1 {
+    order: 2;
+  }
+  .box2 {
+    order: 1;
+  }
+}
+@media (max-width: 715px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+  main {
+    max-width: 100%;
+  }
+  .main-box {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    position: static;
+    transform: none;
+  }
+  .box1 {
+    order: 2;
+    padding: 0 0 0 30px;
+  }
+  .box2 {
+    order: 1;
+    max-width: 100%;
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+  .box2 img {
+    content: url("assets/images/illustration-sign-up-mobile.svg");
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+  }
+  .attribution {
+    color: black;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  footer {
+    margin-top: 20px;
+  }
 }
